@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a PC</title>
+</head>
+<body>
+    <h1>Build your own PC!</h1>
+
+    <form action="/api/v1/journals" method="post">
+
+    <label for="customer-name"><b>Name: </b></label>
+    <input type="text" id="customer-name" name="Name" maxlength="100" required placeholder="e.g. Enan">
+
+    <br>
+
+    <label for="processor"><b>CPU model: </b></label>
+    <select name="processor-model" id="processor" required>
+        <option value="intel">Intel</option>
+        <option value="amd">AMD</option>
+    </select>
+
+    <br>
+
+    <label for="gpu"><b>GPU model: </b></label>
+    <select name="gpu-model" id="gpu" required>
+        <option value="5050">RTX 5050</option>
+        <option value="5060">RTX 5060</option>
+        <option value="5060ti">RTX 5060 Ti</option>
+        <option value="5070">RTX 5070</option>
+        <option value="5070ti">RTX 5070 Ti</option>
+        <option value="5080">RTX 5080</option>
+        <option value="5090">RTX 5090</option>
+    </select>
+
+    <br>
+
+    <label for="comment"><b>Comments (if any): </b></label>
+    <textarea name="user-comment" id="comment" cols="20" rows="3"></textarea>
+
+    <br>
+
+    <button type="submit"><b>Build!</b></button>
+    </form>
+</body>
+</html>
